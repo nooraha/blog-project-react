@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { posts } from "./data.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostContainer />
+    </div>
+  );
+}
+
+function PostContainer() {
+  const listPosts = posts.map((post) => <Post key={post.id} post={post} />);
+  return <div className="PostContainer">{listPosts}</div>;
+}
+
+function Post({ post }) {
+  return (
+    <div className="Post">
+      <h3>{post.title}</h3>
+      <h6>{post.poster}</h6>
+      <p>{post.breadtext}</p>
     </div>
   );
 }

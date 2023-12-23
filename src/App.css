@@ -8,7 +8,8 @@
 
 .Post {
   max-width: 200px;
-  margin: 0;
+  height: 250px;
+  margin: 5px;
   padding: 0;
   border: 2px solid slategray;
   border-radius: 12px;
@@ -18,4 +19,56 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  max-width: 856px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.NavBar {
+  width: 100%;
+  height: 60px;
+  background-color: lightgray;
+}
+
+.NavBar button {
+  float: right;
+}
+
+.NavBar .HomeButton {
+  float: left;
+}
+
+.SearchBar {
+  max-width: 500px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.FilterButtons {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.HomeButton {
+  width: 60px;
+}
+
+input {
+  height: 50px;
+  width: 400px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
 }

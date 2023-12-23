@@ -19,4 +19,10 @@ export const posts = [
     breadtext:
       "post text post text post text post text post text post text post text post text post text post text post text post text ",
   },
+  {
+    id: 3,
+    title: "a fourth one",
+    poster: "noora",
+    breadtext: "more post text, this time with more substance",
+  },
 ];
